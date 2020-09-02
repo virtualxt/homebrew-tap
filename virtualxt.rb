@@ -1,6 +1,6 @@
+$virtualxt_version = "0.5.0"
+
 class Virtualxt < Formula
-    virtualxt_version = "0.5.0"
-    
     desc "A portable, lightweight IBM PC/XT emulator written in Go."
     homepage "http://virtualxt.org"
     head "https://github.com/andreas-jonsson/virtualxt.git", :branch => "master"
