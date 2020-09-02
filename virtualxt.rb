@@ -1,13 +1,12 @@
 class Virtualxt < Formula
-    virtualxt_version = "0.6.1"
+    virtualxt_version = "0.5.0"
     
     desc "A portable, lightweight IBM PC/XT emulator written in Go."
     homepage "http://virtualxt.org"
-    #url "https://github.com/andreas-jonsson/virtualxt/archive/v0.5.zip"
-    url "https://github.com/andreas-jonsson/virtualxt/archive/master.zip"
+    head "https://github.com/andreas-jonsson/virtualxt.git", :branch => "master"
+    url "https://github.com/andreas-jonsson/virtualxt/archive/v0.5.zip"
     version virtualxt_version
-    #sha256 "d1d7a2f125b83a9855858007b1c45081fd478074d93016a976edb6998bd3ea6c"
-    sha256 ""
+    sha256 "d1d7a2f125b83a9855858007b1c45081fd478074d93016a976edb6998bd3ea6c"
     
     depends_on "pkg-config" => :build
     depends_on "go" => :build
