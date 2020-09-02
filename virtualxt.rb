@@ -18,8 +18,8 @@ class Virtualxt < Formula
         bin.install "tools/package/homebrew/virtualxt.freedos"
         
         pkgshare.install "doc/manual" => "manual"
-        pkgshare.install "bios/pcxtbios.bin" => "bios/pcxtbios.bin"
-        pkgshare.install "bios/vxtcga.bin" => "bios/vxtcga.bin"
-        pkgshare.install "boot/freedos.img" => "boot/freedos.img"
+        pkgshare.install "bios/pcxtbios.bin"
+        pkgshare.install "bios/vxtcga.bin"
+        pkgshare.install "boot/freedos.img"
     end
 end
