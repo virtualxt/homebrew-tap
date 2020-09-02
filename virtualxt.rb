@@ -3,7 +3,8 @@ class Virtualxt < Formula
     
     desc "A portable, lightweight IBM PC/XT emulator written in Go."
     homepage "http://virtualxt.org"
-    url "https://github.com/andreas-jonsson/virtualxt/archive/v0.5.zip"
+    #url "https://github.com/andreas-jonsson/virtualxt/archive/v0.5.zip"
+    url "https://github.com/andreas-jonsson/virtualxt/archive/master.zip"
     version virtualxt_version
     #sha256 "d1d7a2f125b83a9855858007b1c45081fd478074d93016a976edb6998bd3ea6c"
     sha256 ""
