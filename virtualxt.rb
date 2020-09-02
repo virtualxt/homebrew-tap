@@ -9,12 +9,13 @@ class Virtualxt < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/andreas-jonsson/virtualxt.git", branch: "master"
 
-  depends_on "go" => [:build, :test]
-  depends_on "pkg-config" => [:build, :test]
+  depends_on "go" => :build
+  depends_on "pkg-config" => :build
   depends_on "sdl2"
 
   def install
-    system "FULL_VERSION=\"#{version}.0\"", "go", "generate", "./..."
+    system "export", "FULL_VERSION=#{version}.0"
+    system "go", "generate", "./..."
     system "go", "build", "-tags", "sdl"
 
     bin.install "virtualxt"
