@@ -5,8 +5,8 @@ class Virtualxt < Formula
   homepage "https://virtualxt.org"
   url "https://github.com/andreas-jonsson/virtualxt/archive/v0.5.zip"
   head "https://github.com/andreas-jonsson/virtualxt.git", branch: "master"
-  sha256 "d1d7a2f125b83a9855858007b1c45081fd478074d93016a976edb6998bd3ea6c"
   version "0.5.0"
+  sha256 "d1d7a2f125b83a9855858007b1c45081fd478074d93016a976edb6998bd3ea6c"
   license "GPL-3.0-or-later"
 
   depends_on "go" => [:build, :test]
