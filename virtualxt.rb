@@ -14,7 +14,7 @@ class Virtualxt < Formula
   depends_on "sdl2"
 
   def install
-    system "FULL_VERSION=#{version}.0", "go", "generate", "./..."
+    system "FULL_VERSION=\"#{version}.0\"", "go", "generate", "./..."
     system "go", "build", "-tags", "sdl"
 
     bin.install "virtualxt"
