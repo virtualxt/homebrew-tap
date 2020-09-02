@@ -1,6 +1,6 @@
-virtualxt_version = "0.6.1"
-
 class Virtualxt < Formula
+    virtualxt_version = "0.6.1"
+    
     desc "A portable, lightweight IBM PC/XT emulator written in Go."
     homepage "http://virtualxt.org"
     url "https://github.com/andreas-jonsson/virtualxt/archive/v0.5.zip"
@@ -13,10 +13,12 @@ class Virtualxt < Formula
     depends_on "sdl2"
 
     def install
-        system "FULL_VERSION=#{virtualxt_version} go generate ./..."
+        system "FULL_VERSION=#{virtualxt_version}.0 go generate ./..."
         system "go build -tags sdl"
 
         bin.install "virtualxt"
+        bin.install "tools/package/homebrew/virtualxt.freedos"
+        
         share.install "doc/manual" => "manual"
         share.install "bios/pcxtbios.bin" => "bios/pcxtbios.bin"
         share.install "bios/vxtcga.bin" => "bios/vxtcga.bin"
