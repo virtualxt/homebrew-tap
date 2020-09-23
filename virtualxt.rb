@@ -17,7 +17,7 @@ class Virtualxt < Formula
     ENV["FULL_VERSION"] = "#{version}.0"
 
     system "go", "generate", "./..."
-    system "go", "build", "-tags", "sdl,network"
+    system "go", "build", "-tags", "sdl,pcap"
 
     bin.install "virtualxt"
     bin.install "tools/package/homebrew/virtualxt.freedos"
