@@ -3,10 +3,10 @@
 class Virtualxt < Formula
   desc "Portable, lightweight IBM PC/XT emulator written in Go"
   homepage "https://virtualxt.org"
-  url "https://github.com/andreas-jonsson/virtualxt/archive/v0.6.tar.gz"
-  version "0.6.0"
-  sha256 "4004ccd7f946f5e6926ec58236e0f77bba19c6a39e504d125fe24bdc3b22350f"
-  license "GPL-3.0-or-later"
+  url "https://github.com/andreas-jonsson/virtualxt/archive/v0.6.1.tar.gz"
+  version "0.6.1"
+  sha256 "6619e16925ab488bc7ee09852d05c98f758050aef9c115eec70a283c9bdc04dc"
+  license "Zlib"
   head "https://github.com/andreas-jonsson/virtualxt.git", branch: "edge"
 
   depends_on "go" => :build
@@ -24,8 +24,7 @@ class Virtualxt < Formula
 
     pkgshare.install "doc/manual" => "manual"
     pkgshare.install "bios/pcxtbios.bin"
-    pkgshare.install "bios/vxtbios.bin"
-    pkgshare.install "bios/vxtcga.bin"
+    pkgshare.install "bios/vxtx.bin"
     pkgshare.install "boot/freedos_hd.img"
   end
 
