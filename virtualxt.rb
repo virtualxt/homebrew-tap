@@ -4,7 +4,6 @@ class Virtualxt < Formula
   desc "Portable, lightweight IBM PC/XT emulator written in Go"
   homepage "https://virtualxt.org"
   url "https://github.com/andreas-jonsson/virtualxt/archive/v0.6.1.tar.gz"
-  version "0.6.1"
   sha256 "6619e16925ab488bc7ee09852d05c98f758050aef9c115eec70a283c9bdc04dc"
   license "Zlib"
   head "https://github.com/andreas-jonsson/virtualxt.git", branch: "edge"
