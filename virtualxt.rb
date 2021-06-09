@@ -28,6 +28,6 @@ class Virtualxt < Formula
   end
 
   test do
-    system "go", "test", "./..."
+    system "virtualxt.freedos", "-h"
   end
 end
